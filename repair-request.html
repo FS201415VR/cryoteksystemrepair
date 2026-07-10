@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mail-In Repair</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <nav class="navbar">
+
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="logo">
+                CryoTek Systems
+            </div>
+
+            <button class="theme-toggle" onclick="toggleTheme()">
+                ☀
+            </button>
+
+        </nav>
+
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="repair-request.html">Repair Request</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </header>
+
+    <section class="hero">
+
+        <h2>Mail-In Repair</h2>
+
+        <p>
+            Send your device to us for professional repair.
+        </p>
+
+    </section>
+
+    <section class="repair-form">
+
+        <h2>Mail-In Repair Request</h2>
+
+        <form action="https://formspree.io/f/xvzjnply" method="POST">
+
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Preferred Contact Method</label>
+
+            <select name="contact_method">
+                <option>Email</option>
+                <option>Phone</option>
+            </select>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone</label>
+            <input type="tel" name="phone" required>
+
+            <label>Return Shipping Address</label>
+<textarea name="shipping_address" required></textarea>
+
+            <label>Manufacturer</label>
+            <select name="manufacturer">
+                <option value="">Select One</option>
+                <option>Apple</option>
+                <option>ASUS</option>
+                <option>Acer</option>
+                <option>Dell</option>
+                <option>HP</option>
+                <option>Lenovo</option>
+                <option>MSI</option>
+                <option>Nintendo</option>
+                <option>Sony</option>
+                <option>Microsoft</option>
+                <option>Samsung</option>
+                <option>Other</option>
+            </select>
+
+            <label>Does the device power on?</label>
+
+            <select name="powers_on">
+                <option>Yes</option>
+                <option>No</option>
+                <option>Sometimes</option>
+            </select>
+
+            <label>Device Type</label>
+            <input type="text" name="device" placeholder="PC, Laptop, Console, Phone, etc." required>
+
+            <label>Brand / Model</label>
+            <input type="text" name="model">
+
+            <label>Problem Description</label>
+<textarea name="problem" required></textarea>
+
+            <label>Accessories Included</label>
+            <input type="text" name="accessories">
+
+            <label>Anything Else We Should Know?</label>
+<textarea name="notes"></textarea>
+
+
+
+            <button type="submit">
+                Send Repair Request
+            </button>
+
+        </form>
+
+    </section>
+
+</body>
+</html>
+
+<script src="js/script.js"></script>
